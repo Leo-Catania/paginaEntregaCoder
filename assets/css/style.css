@@ -377,7 +377,6 @@ footer a:hover {
 
 
 /* PAGINA INICIAR SESION*/
-.insesion{}
 .insesion--form{
     background-color: #09122C;
     padding: 30px 15px;
@@ -388,9 +387,6 @@ footer a:hover {
     color: #D7E3FC;
 }
 
-.insesion--divTextoFoto{
-
-}
 .insesion--divTextoFoto  h4 {
     color: #09122C;
 }
