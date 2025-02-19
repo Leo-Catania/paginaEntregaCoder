@@ -377,7 +377,14 @@ footer a:hover {
 
 
 /* PAGINA INICIAR SESION*/
-
+.insesion{}
+.insesion--form{}
+insesion--divTextoFoto{}
+.insesion--imagenInsesion{
+    display: block;
+    max-width: 200px;
+    max-height: 200px;
+}
 
 
 
