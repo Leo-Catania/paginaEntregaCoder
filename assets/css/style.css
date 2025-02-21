@@ -35,14 +35,22 @@ body {
     grid-area: header;
 }
 
+.header--div{
+    display: flex;
+    justify-content: flex-end;
+}
+
 .header .fondo {
     background-color: #ABC4FF;
     
 }
 
+
 .navbar--gap {
     gap: 10px;
 }
+
+
 
 /*.containerPadreGrid header div img*/
 
@@ -463,6 +471,9 @@ footer a:hover {
         .registrarse {
             width: 90%;
         }
+
+        /*PAGINA INICIAR SESION*/
+
 }
 
 /* PANTALLAS MEDIAS */
