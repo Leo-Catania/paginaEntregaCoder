@@ -270,8 +270,15 @@ footer a:hover {
 
 .papa   {
     display: grid;
-    grid-template-columns: repeat(2,1fr);
+    grid-template-rows: auto, 1fr, auto;
+    grid-template-areas: 
+    "volver"
+    "suscripciones"
+    "footer";
 }
+.suscribirse{
+    grid-area: suscripciones;
+} 
 
 .suscribirse--li{
     background-color: #09122C;
@@ -280,7 +287,7 @@ footer a:hover {
 }
 
 .suscribirse--li h1 {
-    color: #09122C;
+    color: #D7E3FC;
     text-align: center;
 }
 
@@ -309,9 +316,12 @@ footer a:hover {
 }
 
 .suscribirse--volver {
+    grid-area: volver;
     flex-flow: row wrap;
     justify-content: center;
     align-items: center;
+    margin-top: 10px;
+    margin-bottom: 10px;
     width: 80%;
     
 }
@@ -322,34 +332,35 @@ footer a:hover {
 }
 
 .suscribirse--volver ul li {
-    background-color: #D7E3FC;
+    background-color: #09122C;
 }
 
 .suscribirse--volver ul li a {
     padding: 0 30%;
     text-align: center;
     text-decoration: none;
-    background-color: #B6CCFE;
-    color: #09122C;
+    background-color:  #09122C;
+    color: #D7E3FC;
+    border: 1px solid #D7E3FC;
     border-radius: 5px;
     transition: 250ms ease 100ms;
 }
 
 .suscribirse--volver ul li a:hover {
-    color: #D7E3FC;
-    background-color: #09122C;
+    color: #09122C;
+    background-color: #B6CCFE;
+    border: 1px solid #09122C;
 }
 
 .suscribirse--volver ul li p {
-    color: #09122C;
+    color: #D7E3FC;
     text-align: center;
 }
 
+.suscribirse--footer {
+    grid-area: footer;
+}
 
-/* .suscribirse--li--boton div {
-    background-color: #09122C;
-    height: 265px;
-} */
 /* PAGINA REGISTRARSE*/
 
 .registrarse {
@@ -462,6 +473,12 @@ footer a:hover {
         }
 
         /*PAGINA NOSOTROS*/
+        .insesion--divdiv {
+            margin: -9.5rem 0;
+        }
+        .insesion--divTextoFoto{
+            margin-bottom: 0;
+        }
 
         .nosotros--logo img{
             padding: 10px 0;
@@ -473,6 +490,16 @@ footer a:hover {
         }
 
         /*PAGINA INICIAR SESION*/
+
+        /*PAGINA SUSCRIBIRSE*/
+        .suscribirse {
+            flex-flow: row wrap;
+            margin-bottom: 20px
+        }
+        .suscribirse--footer {
+            margin-top: 420px;
+        }
+        
 
 }
 
