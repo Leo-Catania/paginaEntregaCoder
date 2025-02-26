@@ -6,7 +6,7 @@
     grid-area: main;
     transition: 250ms ease 100ms;
     &:hover {
-        background-color: #D7E3FC;
+        background-color: $color--celeste--muyclaromasclaro--D7E3FC;
     }
     div {
         display: flex;
@@ -22,23 +22,23 @@
                 object-fit: cover; /* Asegura que las imágenes mantengan proporción y recorten si es necesario */
                 border-radius: 5px; /* Opcional: esquinas redondeadas */
             /*     border: 1px solid #09122C; */
-            border: 1px solid #09122C;
+            border: 1px solid $color--azul--oscuro--09122C;
             }
             p {
                 font-size: 18px;
                 text-align: center;
-                color: #09122C;
+                color: $color--azul--oscuro--09122C;
             }
             a {
                 font-size: 20px;
                 display: block;
                 text-align: center;
                 text-decoration: none;
-                color: #09122C;
+                color: $color--azul--oscuro--09122C;
                 transition: 250ms ease 100ms;
                 &:hover {
-                    color: #D7E3FC;
-                    background-color: #09122C;
+                    color: $color--celeste--muyclaromasclaro--D7E3FC;
+                    background-color: $color--azul--oscuro--09122C;
                     border-radius: 5px;
                 }
                 }

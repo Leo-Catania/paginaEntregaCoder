@@ -10,31 +10,31 @@
     .suscribirse{
         grid-area: suscripciones;
         .suscribirse--li{
-            background-color: #09122C;
+            background-color: $color--azul--oscuro--09122C;
             height: auto;
             h1 {
-                color: #D7E3FC;
+                color: $color--celeste--muyclaromasclaro--D7E3FC;
                 text-align: center;
             }
             h2 {
                 font-size: 1.5rem;
-                color: #E3F4F4;
+                color: $color--blanquito--E3F4F4;
             }
             h4 {
                 font-size: 1.2rem;
-                color: #E3F4F4;
+                color: $color--blanquito--E3F4F4;
             }
             h5 {
                 font-size: 1.1rem;
-                color: #E3F4F4;
+                color: $color--blanquito--E3F4F4;
             }
             p {
                 font-size: 1rem;
-                color: #E3F4F4;
+                color: $color--blanquito--E3F4F4;
             }
             ul {
                 li {
-                    color: #E3F4F4;
+                    color: $color--blanquito--E3F4F4;
                 }
             }
         }
@@ -51,27 +51,27 @@
             border-radius: 5px;
             li {
                 h1 {
-                    color: #D7E3FC;
+                    color: $color--celeste--muyclaromasclaro--D7E3FC;
                     text-align: center;
                 }
-                background-color: #09122C;
+                background-color: $color--azul--oscuro--09122C;
                 a {
                     padding: 0 30%;
                     text-align: center;
                     text-decoration: none;
-                    background-color:  #09122C;
-                    color: #D7E3FC;
-                    border: 1px solid #D7E3FC;
+                    background-color:  $color--azul--oscuro--09122C;
+                    color: $color--celeste--muyclaromasclaro--D7E3FC;
+                    border: 1px solid $color--celeste--muyclaromasclaro--D7E3FC;
                     border-radius: 5px;
                     transition: 250ms ease 100ms;
                     &:hover {
-                        color: #09122C;
-                        background-color: #B6CCFE;
-                        border: 1px solid #09122C;
+                        color: $color--azul--oscuro--09122C;
+                        background-color: $color--celeste--masclaro--B6CCFE;
+                        border: 1px solid $color--azul--oscuro--09122C;
                     }
                 }
                 p {
-                    color: #D7E3FC;
+                    color: $color--celeste--muyclaromasclaro--D7E3FC;
                     text-align: center;
                 }
             }

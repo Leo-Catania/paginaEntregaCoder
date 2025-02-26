@@ -1,6 +1,6 @@
 footer {
     grid-area: footer;
-    background-color: #ABC4FF;
+    background-color: $color--celeste--claro--ABC4FF;
     .footer--ul {
         display: flex;
         justify-content: center;
@@ -14,10 +14,10 @@ footer {
         padding: 0 5px;
         text-align: center;
         text-decoration: none;
-        color: #09122C;
+        color: $color--azul--oscuro--09122C;
         transition: 250ms ease 100ms;
         &:hover {
-            color: #EDF2FB;
+            color: $color--blanco--EDF2FB;
         }
     }
 }

@@ -2,29 +2,29 @@
 
 .registrarse {
     width: 30%;
-    border: 2px solid  #09122C;
+    border: 2px solid  $color--azul--oscuro--09122C;
     border-radius: 5px;
     padding: 2rem;
-    background-color: #09122C;
+    background-color: $color--azul--oscuro--09122C;
     .registrarse--div {
         label {
-            color: #D7E3FC;
+            color: $color--celeste--muyclaromasclaro--D7E3FC;
         } 
         div {
-            color: #D7E3FC;
+            color: $color--celeste--muyclaromasclaro--D7E3FC;
         } 
     }
     .registrarse--boton {
         button {
             padding: 0 30%;
-            background-color: #ABC4FF;
-            border: 1px solid #ABC4FF;
-            color: #09122C;
+            background-color: $color--celeste--claro--ABC4FF;
+            border: 1px solid $color--celeste--claro--ABC4FF;
+            color: $color--azul--oscuro--09122C;
             transition: 250ms ease 100ms;
             &:hover {
-                background-color: #09122C;
-                border-color: #ABC4FF;
-                color: #D7E3FC;
+                background-color: $color--azul--oscuro--09122C;
+                border-color: $color--celeste--claro--ABC4FF;
+                color: $color--celeste--muyclaromasclaro--D7E3FC;
             }
         }
     }
