@@ -41,6 +41,9 @@ body {
 .header .fondo {
   background-color: #ABC4FF;
 }
+.header .fondo .navbar--gap {
+  column-gap: 10px;
+}
 .header a {
   text-decoration: none;
   color: #09122C;
@@ -60,7 +63,6 @@ body {
 
 nav {
   display: flex;
-  column-gap: 15px;
 }
 nav a {
   text-decoration: none;
