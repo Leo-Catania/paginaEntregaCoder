@@ -450,13 +450,9 @@ footer {
     //SUSCRIBRISE 
     .suscribirse {
         flex-flow: row wrap;
-        margin-bottom: 20px
-    }
-    .suscribirse--footer {
-        margin-top: auto;
+        margin-bottom: 20px;
     }
 }
-
 @media (max-width: 768px) {
     .containerPadreGrid {
         main{

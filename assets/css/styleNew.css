@@ -385,9 +385,6 @@ footer a:hover {
     flex-flow: row wrap;
     margin-bottom: 20px;
   }
-  .suscribirse--footer {
-    margin-top: auto;
-  }
 }
 @media (max-width: 768px) {
   .containerPadreGrid main div section {
