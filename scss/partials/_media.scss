@@ -1,0 +1,83 @@
+@media (max-width:576px) {
+    .containerPadreGrid {
+        grid-template-columns: 1fr;
+        grid-template-rows: repeat(5,1fr);
+        grid-template-areas: 
+        "header"
+        "hero"
+        "aside"
+        "main"
+        "footer";
+    }
+    // HEADER
+    .containerPadreGrid{
+        header {
+            height: 50px;
+            flex-flow: row wrap;
+            justify-content: center;
+            align-items: center;
+        }
+    } 
+    .containerPadreGrid {
+        nav{
+            a{
+                padding: 5px;
+            }
+        }
+    }
+    //HERO
+    .hero {
+        flex-flow: column nowrap;
+        .hero--div {
+            padding: 5px 10px;
+            width: 50%;
+            margin: 5px;
+        }
+    }
+    //MAIN
+    .containerPadreGrid {
+        main {
+            div {
+                section {
+                    width: 100%;
+                }
+            }
+        }
+    }
+    //ASIDE
+    //FOOTER
+    footer {
+        .footer--ul {
+            flex-flow: column wrap;
+        }
+    }
+    //PAGINA NOSOTROS
+    .insesion {
+        .insesion--divdiv {
+            margin: -9.5rem 0;
+        }
+        .insesion--divTextoFoto{
+            margin-bottom: 0;
+        }
+    }
+    //REGISTRARSE
+    .registrarse {
+        width: 90%;
+    }
+    //SUSCRIBRISE 
+    .suscribirse {
+        flex-flow: row wrap;
+        margin-bottom: 20px;
+    }
+}
+@media (max-width: 768px) {
+    .containerPadreGrid {
+        main{
+            div{
+                section{
+                    width: 100%;
+                }
+            }
+        }
+    }
+}

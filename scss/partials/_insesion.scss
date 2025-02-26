@@ -1,0 +1,22 @@
+//INSESION
+
+.insesion {
+    .insesion--form{
+        background-color: #09122C;
+        padding: 30px 15px;
+        border-radius: 10px;
+        label {
+            color: #D7E3FC;
+        }
+    }
+    .insesion--divTextoFoto {
+        h4 {
+            color: #09122C;
+        }
+    }
+    .insesion--imagenInsesion{
+        display: block;
+        max-width: 200px;
+        max-height: 200px;
+    }
+}

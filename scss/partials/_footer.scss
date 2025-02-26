@@ -1,0 +1,23 @@
+footer {
+    grid-area: footer;
+    background-color: #ABC4FF;
+    .footer--ul {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        list-style: none;
+        column-gap: 5px;
+        margin:0;
+        padding: 0;
+    }
+    a {
+        padding: 0 5px;
+        text-align: center;
+        text-decoration: none;
+        color: #09122C;
+        transition: 250ms ease 100ms;
+        &:hover {
+            color: #EDF2FB;
+        }
+    }
+}

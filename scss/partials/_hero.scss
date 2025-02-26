@@ -1,0 +1,20 @@
+//HERO
+
+.hero {
+    grid-area: hero;
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: center;
+    align-items: center;
+    .hero--div {
+        border: 1px solid #09122C;
+        padding: .5em 2rem;
+        text-align: center;
+    }
+    .hero--p {
+        font-size: 1rem;
+    }
+    .hero--h5{
+        margin: 0;
+    }
+}

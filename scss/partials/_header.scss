@@ -1,0 +1,42 @@
+//HEADER
+
+.header {
+    padding: 0;
+    grid-area: header;
+    .fondo {
+        background-color: #ABC4FF;
+    }
+    a {
+        text-decoration: none;
+        color: #09122C;
+        padding: 5px;
+        transition: 250ms ease 100ms;
+        &:hover {
+            color: #D7E3FC;
+            background-color: #09122C;
+            border-radius: 5px;
+        }
+    }
+}
+.header--div{
+    display: flex;
+    justify-content: flex-end;
+}
+
+//  NAV
+
+nav {
+    display: flex;
+    column-gap: 15px;
+    a {
+        text-decoration: none;
+        padding: 10px;
+        color: #09122C;
+        transition: 250ms ease 100ms;
+        &:hover {
+            color: #D7E3FC;
+            background-color: #09122C;
+            border-radius: 5px;
+        }
+    }
+}

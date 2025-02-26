@@ -223,6 +223,49 @@ footer a:hover {
   font-size: 1.3rem;
 }
 
+.registrarse {
+  width: 30%;
+  border: 2px solid #09122C;
+  border-radius: 5px;
+  padding: 2rem;
+  background-color: #09122C;
+}
+.registrarse .registrarse--div label {
+  color: #D7E3FC;
+}
+.registrarse .registrarse--div div {
+  color: #D7E3FC;
+}
+.registrarse .registrarse--boton button {
+  padding: 0 30%;
+  background-color: #ABC4FF;
+  border: 1px solid #ABC4FF;
+  color: #09122C;
+  transition: 250ms ease 100ms;
+}
+.registrarse .registrarse--boton button:hover {
+  background-color: #09122C;
+  border-color: #ABC4FF;
+  color: #D7E3FC;
+}
+
+.insesion .insesion--form {
+  background-color: #09122C;
+  padding: 30px 15px;
+  border-radius: 10px;
+}
+.insesion .insesion--form label {
+  color: #D7E3FC;
+}
+.insesion .insesion--divTextoFoto h4 {
+  color: #09122C;
+}
+.insesion .insesion--imagenInsesion {
+  display: block;
+  max-width: 200px;
+  max-height: 200px;
+}
+
 .papa {
   display: grid;
   grid-template-rows: auto, 1fr, auto;
@@ -298,49 +341,6 @@ footer a:hover {
 }
 .papa .suscribirse--footer {
   grid-area: footer;
-}
-
-.registrarse {
-  width: 30%;
-  border: 2px solid #09122C;
-  border-radius: 5px;
-  padding: 2rem;
-  background-color: #09122C;
-}
-.registrarse .registrarse--div label {
-  color: #D7E3FC;
-}
-.registrarse .registrarse--div div {
-  color: #D7E3FC;
-}
-.registrarse .registrarse--boton button {
-  padding: 0 30%;
-  background-color: #ABC4FF;
-  border: 1px solid #ABC4FF;
-  color: #09122C;
-  transition: 250ms ease 100ms;
-}
-.registrarse .registrarse--boton button:hover {
-  background-color: #09122C;
-  border-color: #ABC4FF;
-  color: #D7E3FC;
-}
-
-.insesion .insesion--form {
-  background-color: #09122C;
-  padding: 30px 15px;
-  border-radius: 10px;
-}
-.insesion .insesion--form label {
-  color: #D7E3FC;
-}
-.insesion .insesion--divTextoFoto h4 {
-  color: #09122C;
-}
-.insesion .insesion--imagenInsesion {
-  display: block;
-  max-width: 200px;
-  max-height: 200px;
 }
 
 @media (max-width: 576px) {

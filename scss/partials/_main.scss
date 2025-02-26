@@ -1,0 +1,47 @@
+//MAIN
+
+.containerPadreGrid main {
+    border-radius: 5px 5px 2px 2px;
+    margin: 5px;
+    grid-area: main;
+    transition: 250ms ease 100ms;
+    &:hover {
+        background-color: #D7E3FC;
+    }
+    div {
+        display: flex;
+        flex-flow: row wrap;
+        padding: 50px;
+        row-gap: 25px;
+        column-gap: 10px;
+        section {
+            width:49%;
+            img {
+                width: 100%; /* Asegura que la imagen ocupe todo el ancho disponible del contenedor */
+                height: 200px; /* Establece una altura fija */
+                object-fit: cover; /* Asegura que las imágenes mantengan proporción y recorten si es necesario */
+                border-radius: 5px; /* Opcional: esquinas redondeadas */
+            /*     border: 1px solid #09122C; */
+            border: 1px solid #09122C;
+            }
+            p {
+                font-size: 18px;
+                text-align: center;
+                color: #09122C;
+            }
+            a {
+                font-size: 20px;
+                display: block;
+                text-align: center;
+                text-decoration: none;
+                color: #09122C;
+                transition: 250ms ease 100ms;
+                &:hover {
+                    color: #D7E3FC;
+                    background-color: #09122C;
+                    border-radius: 5px;
+                }
+                }
+            }
+        }
+    }

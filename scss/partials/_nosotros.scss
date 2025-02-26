@@ -1,0 +1,23 @@
+// PAGINA NOSOTROS
+
+.nosotros {
+    .nosotros--logo {
+        img {
+            border-radius: 55px;
+        }
+    }
+    .nosotros--filas {
+        background-color: #B6CCFE;
+        margin: 2rem;
+        border: 2px solid #09122C;
+        border-radius: 15px;
+    }
+    .nosotros--parrafo {
+        margin: 0;
+        padding: 0;
+        p {
+            margin: 0;
+            font-size: 1.3rem;
+        }
+    }
+}
