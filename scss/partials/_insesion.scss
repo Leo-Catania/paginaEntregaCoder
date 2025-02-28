@@ -8,6 +8,31 @@
         label {
             color: $color--celeste--muyclaromasclaro--D7E3FC;
         }
+        .form--div {
+            color: $color--blanquito--E3F4F4;
+        }
+        .registrarse--boton {
+            .insesion--boton {
+                @extend .suscribirse--boton;
+                &:hover {
+                    animation: insesion 3s alternate-reverse infinite;
+                    @keyframes insesion {
+                        0% {
+                            background-color: $color--blanquito--E3F4F4;
+                        }
+                        25% {
+                            background-color: $color--celeste--claro--ABC4FF;
+                        }
+                        50% {
+                            background-color: $color--celeste--claro--ABC4FF;
+                        }
+                        100% {
+                            background-color: $color--blanquito--E3F4F4;
+                        }
+                    }
+                }
+            }
+        }
     }
     .insesion--divTextoFoto {
         h4 {

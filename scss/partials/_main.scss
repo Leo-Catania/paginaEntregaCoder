@@ -29,19 +29,7 @@
                 text-align: center;
                 color: $color--azul--oscuro--09122C;
             }
-            a {
-                font-size: 20px;
-                display: block;
-                text-align: center;
-                text-decoration: none;
-                color: $color--azul--oscuro--09122C;
-                transition: 250ms ease 100ms;
-                &:hover {
-                    color: $color--celeste--muyclaromasclaro--D7E3FC;
-                    background-color: $color--azul--oscuro--09122C;
-                    border-radius: 5px;
-                }
-                }
+            
             }
         }
     }

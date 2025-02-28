@@ -1,4 +1,16 @@
 @charset "UTF-8";
+.suscribirse--boton, .insesion .insesion--form .registrarse--boton .insesion--boton {
+  background-color: #09122C;
+  color: #D7E3FC;
+  border-color: #E3F4F4;
+  padding: 0 50px;
+}
+.suscribirse--boton:hover, .insesion .insesion--form .registrarse--boton .insesion--boton:hover {
+  background-color: #ABC4FF;
+  color: #09122C;
+  border-color: #B6CCFE;
+}
+
 * {
   margin: 0;
   padding: 0;
@@ -127,19 +139,6 @@ nav a:hover {
   text-align: center;
   color: #09122C;
 }
-.containerPadreGrid main div section a {
-  font-size: 20px;
-  display: block;
-  text-align: center;
-  text-decoration: none;
-  color: #09122C;
-  transition: 250ms ease 100ms;
-}
-.containerPadreGrid main div section a:hover {
-  color: #D7E3FC;
-  background-color: #09122C;
-  border-radius: 5px;
-}
 
 .containerPadreGrid aside {
   border-radius: 5px 5px 2px 2px;
@@ -258,6 +257,26 @@ footer a:hover {
 }
 .insesion .insesion--form label {
   color: #D7E3FC;
+}
+.insesion .insesion--form .form--div {
+  color: #E3F4F4;
+}
+.insesion .insesion--form .registrarse--boton .insesion--boton:hover {
+  animation: insesion 3s alternate-reverse infinite;
+}
+@keyframes insesion {
+  0% {
+    background-color: #E3F4F4;
+  }
+  25% {
+    background-color: #ABC4FF;
+  }
+  50% {
+    background-color: #ABC4FF;
+  }
+  100% {
+    background-color: #E3F4F4;
+  }
 }
 .insesion .insesion--divTextoFoto h4 {
   color: #09122C;
