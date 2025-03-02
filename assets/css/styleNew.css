@@ -139,6 +139,22 @@ nav a:hover {
   text-align: center;
   color: #09122C;
 }
+.containerPadreGrid main div section a {
+  font-size: 20px;
+  display: block;
+  text-align: center;
+  text-decoration: none;
+  color: #09122C;
+  color: #09122C;
+  transition: 250ms ease 100ms;
+}
+.containerPadreGrid main div section a:hover {
+  color: #D7E3FC;
+  background-color: #09122C;
+  color: #D7E3FC;
+  background-color: #09122C;
+  border-radius: 5px;
+}
 
 .containerPadreGrid aside {
   border-radius: 5px 5px 2px 2px;
