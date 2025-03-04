@@ -224,6 +224,7 @@ footer a:hover {
 
 .nosotros .nosotros--logo img {
   border-radius: 55px;
+  padding: 10px 0px;
 }
 .nosotros .nosotros--filas {
   background-color: #B6CCFE;
