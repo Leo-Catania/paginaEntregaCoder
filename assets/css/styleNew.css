@@ -1,16 +1,4 @@
 @charset "UTF-8";
-.suscribirse--boton, .insesion .insesion--form .registrarse--boton .insesion--boton {
-  background-color: #09122C;
-  color: #D7E3FC;
-  border-color: #E3F4F4;
-  padding: 0 50px;
-}
-.suscribirse--boton:hover, .insesion .insesion--form .registrarse--boton .insesion--boton:hover {
-  background-color: #ABC4FF;
-  color: #09122C;
-  border-color: #B6CCFE;
-}
-
 * {
   margin: 0;
   padding: 0;
@@ -44,6 +32,18 @@ body {
   grid-template-rows: 40px auto 1fr auto;
   grid-template-areas: "header header header" "hero hero hero" "main main aside" "footer footer footer";
   gap: 10px;
+}
+
+.suscribirse--boton, .insesion .insesion--form .registrarse--boton .insesion--boton {
+  background-color: #09122C;
+  color: #D7E3FC;
+  border-color: #E3F4F4;
+  padding: 0 50px;
+}
+.suscribirse--boton:hover, .insesion .insesion--form .registrarse--boton .insesion--boton:hover {
+  background-color: #ABC4FF;
+  color: #09122C;
+  border-color: #B6CCFE;
 }
 
 .header {
@@ -198,30 +198,6 @@ nav a:hover {
   background-color: #09122C;
 }
 
-footer {
-  grid-area: footer;
-  background-color: #ABC4FF;
-}
-footer .footer--ul {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  list-style: none;
-  column-gap: 5px;
-  margin: 0;
-  padding: 0;
-}
-footer a {
-  padding: 0 5px;
-  text-align: center;
-  text-decoration: none;
-  color: #09122C;
-  transition: 250ms ease 100ms;
-}
-footer a:hover {
-  color: #EDF2FB;
-}
-
 .nosotros .nosotros--logo img {
   border-radius: 55px;
   padding: 10px 0px;
@@ -242,6 +218,7 @@ footer a:hover {
 }
 
 .registrarse {
+  margin-top: 10px;
   width: 30%;
   border: 2px solid #09122C;
   border-radius: 5px;
@@ -304,42 +281,45 @@ footer a:hover {
   max-height: 200px;
 }
 
-.papa {
+.containerSuscribirse {
   display: grid;
   grid-template-rows: auto, 1fr, auto;
-  grid-template-areas: "volver" "suscripciones" "footer";
+  grid-template-areas: "header" "suscripciones" "footer";
 }
-.papa .suscribirse {
+.containerSuscribirse .header {
+  grid-area: header;
+}
+.containerSuscribirse .suscribirse {
   grid-area: suscripciones;
 }
-.papa .suscribirse .suscribirse--li {
+.containerSuscribirse .suscribirse .suscribirse--li {
   background-color: #09122C;
   height: auto;
 }
-.papa .suscribirse .suscribirse--li h1 {
+.containerSuscribirse .suscribirse .suscribirse--li h1 {
   color: #D7E3FC;
   text-align: center;
 }
-.papa .suscribirse .suscribirse--li h2 {
+.containerSuscribirse .suscribirse .suscribirse--li h2 {
   font-size: 1.5rem;
   color: #E3F4F4;
 }
-.papa .suscribirse .suscribirse--li h4 {
+.containerSuscribirse .suscribirse .suscribirse--li h4 {
   font-size: 1.2rem;
   color: #E3F4F4;
 }
-.papa .suscribirse .suscribirse--li h5 {
+.containerSuscribirse .suscribirse .suscribirse--li h5 {
   font-size: 1.1rem;
   color: #E3F4F4;
 }
-.papa .suscribirse .suscribirse--li p {
+.containerSuscribirse .suscribirse .suscribirse--li p {
   font-size: 1rem;
   color: #E3F4F4;
 }
-.papa .suscribirse .suscribirse--li ul li {
+.containerSuscribirse .suscribirse .suscribirse--li ul li {
   color: #E3F4F4;
 }
-.papa .suscribirse--volver {
+.containerSuscribirse .suscribirse--volver {
   grid-area: volver;
   flex-flow: row wrap;
   justify-content: center;
@@ -348,17 +328,17 @@ footer a:hover {
   margin-bottom: 10px;
   width: 90%;
 }
-.papa .suscribirse--volver ul {
+.containerSuscribirse .suscribirse--volver ul {
   border-radius: 5px;
 }
-.papa .suscribirse--volver ul li {
+.containerSuscribirse .suscribirse--volver ul li {
   background-color: #09122C;
 }
-.papa .suscribirse--volver ul li h1 {
+.containerSuscribirse .suscribirse--volver ul li h1 {
   color: #D7E3FC;
   text-align: center;
 }
-.papa .suscribirse--volver ul li a {
+.containerSuscribirse .suscribirse--volver ul li a {
   padding: 0 30%;
   text-align: center;
   text-decoration: none;
@@ -368,17 +348,41 @@ footer a:hover {
   border-radius: 5px;
   transition: 250ms ease 100ms;
 }
-.papa .suscribirse--volver ul li a:hover {
+.containerSuscribirse .suscribirse--volver ul li a:hover {
   color: #09122C;
   background-color: #B6CCFE;
   border: 1px solid #09122C;
 }
-.papa .suscribirse--volver ul li p {
+.containerSuscribirse .suscribirse--volver ul li p {
   color: #D7E3FC;
   text-align: center;
 }
-.papa .suscribirse--footer {
+.containerSuscribirse .suscribirse--footer {
   grid-area: footer;
+}
+
+footer {
+  grid-area: footer;
+  background-color: #ABC4FF;
+}
+footer .footer--ul {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  list-style: none;
+  column-gap: 5px;
+  margin: 0;
+  padding: 0;
+}
+footer a {
+  padding: 0 5px;
+  text-align: center;
+  text-decoration: none;
+  color: #09122C;
+  transition: 250ms ease 100ms;
+}
+footer a:hover {
+  color: #EDF2FB;
 }
 
 @media (max-width: 576px) {
@@ -424,7 +428,23 @@ footer a:hover {
     margin-bottom: 20px;
   }
 }
-@media (max-width: 768px) {
+@media (max-width: 850px) {
+  .containerPadreGrid {
+    grid-template-columns: 1fr;
+    grid-template-rows: repeat(5, 1fr);
+    grid-template-areas: "header" "hero" "aside" "main" "footer";
+  }
+  .containerPadreGrid .hero {
+    flex-flow: column nowrap;
+  }
+  .containerPadreGrid .hero .hero--div {
+    padding: 5px 10px;
+    width: 50%;
+    margin: 5px;
+  }
+  .containerPadreGrid main {
+    margin: 0 10px;
+  }
   .containerPadreGrid main div section {
     width: 100%;
   }

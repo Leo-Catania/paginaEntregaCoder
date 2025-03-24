@@ -70,9 +70,28 @@
         margin-bottom: 20px;
     }
 }
-@media (max-width: 768px) {
+@media (max-width: 850px) {
+    
     .containerPadreGrid {
+        grid-template-columns: 1fr;
+        grid-template-rows: repeat(5,1fr);
+        grid-template-areas: 
+        "header"
+        "hero"
+        "aside"
+        "main"
+        "footer";
+        .hero {
+            flex-flow: column nowrap;
+            .hero--div {
+                padding: 5px 10px;
+                width: 50%;
+                margin: 5px;
+            }
+        }
+
         main{
+            margin: 0 10px;
             div{
                 section{
                     width: 100%;

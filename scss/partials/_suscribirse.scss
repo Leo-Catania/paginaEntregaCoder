@@ -2,13 +2,16 @@
 
 
 
-.papa {
+.containerSuscribirse {
     display: grid;
     grid-template-rows: auto, 1fr, auto;
     grid-template-areas: 
-    "volver"
+    "header"
     "suscripciones"
     "footer";
+    .header {
+        grid-area: header;
+    }
     .suscribirse{
         grid-area: suscripciones;
         .suscribirse--li{

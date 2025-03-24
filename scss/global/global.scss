@@ -1,3 +1,39 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+h1{
+    font-size: 3rem;}
+
+h2{
+    font-size: 2rem;}
+
+h3{
+    font-size: 1.7rem;}
+
+p{
+    font-size: 1.5rem;}
+
+body {
+    background-color: $color--blanquito--E3F4F4;
+}
+
+.containerPadreGrid {
+    height: 100vh;
+    display: grid;
+    grid-template-columns: 1fr 3fr 1fr;
+    grid-template-rows: 40px auto 1fr auto;
+    grid-template-areas: 
+        "header header header" 
+        "hero hero hero"   
+        "main main aside"
+        "footer footer footer"
+    ;
+    gap: 10px;
+}
+
 .suscribirse--boton {
     background-color: $color--azul--oscuro--09122C;
     color: $color--celeste--muyclaromasclaro--D7E3FC;
@@ -9,3 +45,4 @@
         border-color: $color--celeste--masclaro--B6CCFE;
     }
 }
+
