@@ -70,8 +70,7 @@
         margin-bottom: 20px;
     }
 }
-@media (max-width: 850px) {
-    
+@media (min-width: 767px) and (max-width: 850px) {
     .containerPadreGrid {
         grid-template-columns: 1fr;
         grid-template-rows: repeat(5,1fr);
@@ -89,7 +88,6 @@
                 margin: 5px;
             }
         }
-
         main{
             margin: 0 10px;
             div{
@@ -98,5 +96,16 @@
                 }
             }
         }
+        }
+    .containerSuscribirse {
+            .suscribirse {
+                height: 94vh;
+            }
+        }
+    .registrarse {
+        width: 40vh;
     }
+
+    
 }
+    
